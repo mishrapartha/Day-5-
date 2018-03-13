@@ -1,0 +1,18 @@
+# Creating a function to calculate mean
+mymean<- function(x){
+  i=1
+  for( i in x[i] ){
+    a=x[i]
+    a=x[i]+a
+    return(a)
+  }
+  m=a/length(x)
+  return(m)
+}
+
+# Testing the function
+b=c(1,2,3)
+mymean(b)
+#Answer 2
+mean(b)
+#Answer 2
