@@ -1,0 +1,16 @@
+# My function for mean
+def mymean(x):
+    a=sum(x)
+    m=a/len(x)
+    return m
+        
+# Testing the function
+
+import numpy as np
+b=np.r_[1,2,3] # r_ is the python equivalent of c() function in R prog
+b
+mymean(b)
+
+import statistics as sts
+sts.mean(b)
+
