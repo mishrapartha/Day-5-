@@ -1,0 +1,18 @@
+# Creating my function for mode in Python
+
+import pandas as pd
+def mymode(x):
+    myseries=pd.Series([tuple(i) for i in x])
+    mycount=myseries.value_counts()
+    a=pd.DataFrame(mycount)
+    m=max(a[0])
+    n=a[a==m]
+    k=n.dropna()
+    return k
+
+
+# Testing th function
+
+b=[[20],[21],[22],[20],[20],[21],[22],[22]]
+mymode(b)
+
