@@ -1,0 +1,21 @@
+# Function for mode
+mymode<- function(x){
+    a=data.frame(table(x))
+    m=max(a[2])
+    n=subset(a,a[2]==m)
+    return(n[1])
+}
+
+
+# Function for mode with the number of frequencies
+mymode1<- function(x){
+  a=table(x)
+  m=max(a[2])
+  n=subset(a,a[2]==m)
+  return(n[1])
+}
+
+# Testing the function
+b=c(20,21,22,20,20,21)
+mymode(b)
+mymode1(b)
