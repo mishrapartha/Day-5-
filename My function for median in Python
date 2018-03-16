@@ -1,0 +1,25 @@
+# My function for median in Python
+def mymedian(x):
+    b=sorted(x)
+    e=len(x)
+    a=len(x)-1
+    d=int(a/2)
+    h=(b[d]+b[d+1])/2
+    i=b[d]
+    if e%2==0:
+        print(h)
+    else:
+        print(i)
+# Testing the function
+b=[13,4,7,10,8,5]
+f=mymedian(b)
+#Answer 7.5
+j=[1,2,3,4,5,6,7,8,9]
+mymedian(j)
+#Answer 5 
+import statistics
+statistics.median(j)
+#Answer 5
+import statistics
+statistics.median(b)
+#Answer 7.5
