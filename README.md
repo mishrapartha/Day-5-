@@ -1,2 +1,2 @@
-# Custom Function
+# Custom Functions
 
